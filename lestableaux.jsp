@@ -24,7 +24,7 @@
         Chiffre 2 : <%= Integer.parseInt(tableauDeChiffres[1]) %></br>
         Chiffre 3 : <%= Integer.parseInt(tableauDeChiffres[2]) %></p>
 
-        <h2>Exercice 1 : La carré de la première valeur</h2>
+        <h2>Exercice 1 : Le carré de la première valeur</h2>
         <p>Le carré de la première valeur est <%= Math.pow(Integer.parseInt(tableauDeChiffres[0]), 2) %></p>
 
         <h2>Exercice 2 : La somme des 2 premières valeurs</h2>

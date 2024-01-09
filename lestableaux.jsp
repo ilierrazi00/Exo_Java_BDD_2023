@@ -20,9 +20,14 @@
         String[] tableauDeChiffres = chaine.split("\\s+");
 %>
         <p>Le tableau contient <%= tableauDeChiffres.length %> valeurs</br>
-        Chiffre 1 : <%= Integer.parseInt(tableauDeChiffres[0]) %></br>
-        Chiffre 2 : <%= Integer.parseInt(tableauDeChiffres[1]) %></br>
-        Chiffre 3 : <%= Integer.parseInt(tableauDeChiffres[2]) %></p>
+        <% 
+            for (int i = 0; i < tableauDeChiffres.length; i++) {
+        %>
+            Chiffre <%= i + 1 %> : <%= Integer.parseInt(tableauDeChiffres[i]) %></br>
+        <%
+            }
+        %>
+        </p>
 
         <h2>Exercice 1 : Le carré de la première valeur</h2>
         <p>Le carré de la première valeur est <%= Math.pow(Integer.parseInt(tableauDeChiffres[0]), 2) %></p>
